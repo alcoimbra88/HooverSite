@@ -12,36 +12,40 @@ html, body{
     display: flex;
     justify-content: space-between;
     background-color: rgb(43, 43, 43);
-    align-items: center;  
+    align-items: center; 
 }
 
 #cabecalho-inicio h1{
     margin-left: 2vh;
+    color: white
 }
 
 #menu-inicio{
+    margin-top: 0px;
     margin-right: 2vh;
 }
 
 #menu-inicio ul li{
     display: inline;
-    margin-right: 2vh;
+    margin-right: 4vh;
 }
 
 #menu-inicio a{
     color: white;
     text-decoration: none;
-    font-weight: 700;
-    font-size: 3vh;   
+    font-weight: 300;
+    font-size: 3vh;
 }
 
-.botao-contato {
-    font-size: 3vh;
+#botao-contato {
+    font-size: 2vh;
     background-color: white;
     border-radius: 5vh;
     font-weight: 700;
-    border: none;
+    border-color: white;
+    
 }
+
 
 
 

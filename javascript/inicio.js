@@ -1,13 +1,13 @@
 function mouseEncima (elemento){
     elemento.style.textShadow="0px 0px 8px white";
-    elemento.style.fontSize="3.2vh";
-    elemento.style.transition="0.8s";
+    elemento.style.transition="1s";
+    elemento.style.fontWeight="700";
 }
 
 function mouseFora (elemento){
     elemento.style.textShadow="none";
-    elemento.style.fontSize="3vh";
-    elemento.style.transition="0.8s"
+    elemento.style.transition="1s"
+    elemento.style.fontWeight="300";
 }
 
 function mouseEncimaFooter (elemento){
@@ -17,5 +17,18 @@ function mouseEncimaFooter (elemento){
 
 function mouseForaFooter (elemento){
     elemento.style.color="white"
+    elemento.style.transition="0.8s"
+}
+
+function mouseEncimaBotao (elemento){ 
+    elemento.style.backgroundColor="rgb(43,43,43)";
+    elemento.style.borderColor="white";
+    elemento.style.color="white"
+    elemento.style.transition="0.8s"
+}
+
+function mouseForaBotao (elemento){
+    elemento.style.backgroundColor="white";
+    elemento.style.color="rgb(43,43,43)"
     elemento.style.transition="0.8s"
 }
