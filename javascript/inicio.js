@@ -1,13 +1,13 @@
 function mouseEncima (elemento){
     elemento.style.textShadow="0px 0px 8px white";
     elemento.style.transition="1s";
-    elemento.style.fontWeight="700";
+    elemento.style.fontWeight="bolder";
 }
 
 function mouseFora (elemento){
     elemento.style.textShadow="none";
     elemento.style.transition="1s"
-    elemento.style.fontWeight="300";
+    elemento.style.fontWeight="lighter";
 }
 
 function mouseEncimaFooter (elemento){
