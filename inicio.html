@@ -11,19 +11,31 @@
 
     <body class="body-inicio">
 
-        <header id="cabecalho-inicio" >
-            <div class="div-logotipo">
-                <h1 class="logotipo">HOOVER</h1>
-            </div>
-            <nav id="menu-inicio">
-                <ul>
-                    <li><a id="item01" onmouseover="mouseEncima(this)" onmouseout="mouseFora(this)" href="">Inicio</a></li>
-                    <li><a id="item02" onmouseover="mouseEncima(this)" onmouseout="mouseFora(this)" href="">Quem Somos</a></li>
-                    <li><a id="item03" onmouseover="mouseEncima(this)" onmouseout="mouseFora(this)" href="">Nossos trabalhos</a></li>
-                    <li><button id="botao-contato" type="button" class="btn btn-outline-secondary" onmouseover="mouseEncimaBotao(this)" onmouseout="mouseForaBotao(this)" >CONTATO</button></li>
-                </ul>
-            </nav>
+        <header>
+        <div class="conteiner-header">
+            <nav id="barra-navegacao" class="navbar fixed-top  navbar-expand-lg navbar-dark bg-dark" onscroll="navBarScroll(this)">
+                <a class="navbar-brand" id="logo" href="#">HOOVER</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+                  <ul class="nav ">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Quem Somos</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Nossos Trabalhos</a>
+                    </li>
+                    <button type="button" id="botao-contato" class="btn btn-outline-secondary" onmouseover="mouseEncimaBotao(this)" onmouseout="mouseForaBotao(this)" >Contato</button>
+                  </ul>
+                </div>
+              </nav>
+        </div>
         </header>
+
 
 
         <div id="texto-inicio">
@@ -32,6 +44,33 @@
                 Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Suco de cevadiss, é um leite divinis, 
                 qui tem lupuliz, matis, aguis e fermentis.</p>
             <img src="img/code-820275_1920.jpg" alt="">
+        </div>
+        <div id="quem-somos">
+            <h1 id="quem-somos-h1">Quem Somos</h1>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Detraxit consequat et quo num tendi nada.
+                Manduma pindureta quium dia nois paga. Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.<br>
+
+                Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. Nullam volutpat risus nec leo commodo, ut interdum diam laoreet. 
+                Sed non consequat odio. Suco de cevadiss deixa as pessoas mais interessantis. Vehicula non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        </div>
+        <div id="nossos-trabalhos">
+            <h1 id="nossos-trabalhos-h1">Nossos Trabalhos</h1>
+        </div>
+        <div id="contato">
+            <div id="conteiner-contato">
+                <h1 id="contato-h1">Nosso Contato</h1>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">Seu Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Sua Mensagem</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-primary" type="button">Enviar</button>
+                      </div>
+                  </div>
+            </div>
         </div>
 
 

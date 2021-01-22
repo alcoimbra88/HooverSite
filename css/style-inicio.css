@@ -13,58 +13,39 @@ html, body{
 
 /*================================== menu-navegacao ================================= */
 
-#cabecalho-inicio{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    opacity: 0;
-    animation: loadCabecalho 6s forwards; 
-    z-index: 2;
-}
-
-#cabecalho-inicio h1{
-    margin-left: 2vh;
-    color: white
-}
-
-#menu-inicio{
-    margin-top: 0px;
-    margin-right: 2vh;
-}
-
-#menu-inicio ul li{
-    display: inline;
-    margin-right: 4vh;
-}
-
-#menu-inicio a{
-    color: white;
-    text-decoration: none;
-    font-weight: 300;
-    font-size: 3vh;
-}
-
-#botao-contato {
-    font-size: 2vh;
+#botao-contato{
+    border-radius: 20px;
+    color: rgb(43, 43, 43);
     background-color: white;
-    border-radius: 5vh;
-    font-weight: 700;
-    border-color: white;
+    border:none;
 }
 
-#botao-contato:hover{
-    box-shadow: 3px 3px 0px white;
+.nav{
+    margin-right: 3vh;
 }
 
-@keyframes loadCabecalho{
-    0%{
-        opacity: 0;
-        transition: 0.8s;
-    }
-    100%{
-        opacity: 1;
-        
-    }
+
+
+.conteiner-header{
+ background-color: rgb(43, 43, 43);
+}
+
+#logo{
+    font-size: 6vh;
+    margin-right: 0px;
+
+}
+
+#barra-navegacao {
+    background-color: rgb(43, 43, 43) !important;
+}
+
+.navbar-brand{
+    color: white;
+}
+
+.nav-link{
+    color: white
 }
 
 
@@ -73,6 +54,7 @@ html, body{
 
 
 #texto-inicio{
+    padding: 35vh 0 35vh 0;
     text-align: center;
     height: 110%;
     display: flex;
@@ -83,11 +65,12 @@ html, body{
 
 #texto-inicio img{
     position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
-   width: 100%;
+    width: 100%;
     height: 100%;
-    z-index: 1;
+    z-index: 0;
     opacity: 0;
     animation: loadImgFundo 10s forwards;
 }
@@ -117,6 +100,70 @@ html, body{
         z-index: 1;
     }
 }
+
+#quem-somos{
+    background-color: rgb(43,43,43);
+    padding: 35vh 0 35vh 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    border-top: white solid 1px;
+    box-shadow: 0px 0px 8px white;
+
+}
+
+#quem-somos p{
+    font-weight: 100;
+    font-size: 4vh;
+    text-align: justify;
+    margin-left: 15vh;
+    margin-right: 15vh;
+}
+
+#nossos-trabalhos {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    padding: 35vh 0 35vh 0;
+    text-align: center;
+    color: white;
+}
+
+#nossos-trabalhos h1{
+    z-index: 2;
+}
+
+
+#contato{
+    padding: 16vh 0 20vh 0;
+    text-align: center;
+    color: white;
+    background-color: rgb(59, 59, 59);
+    display: flex;
+    z-index: 2;
+}
+
+#conteiner-contato{
+    margin-left: 20vh;
+}
+
+#conteiner-contato h1{
+    margin-bottom: 6vh;
+}
+
+#exampleFormControlInput1{
+    width: 70vh;
+}
+
+#conteiner-contato button{
+    margin-top: 4vh;
+    background-color: black;
+    border: none;
+}
+
+
 
 
 /*================================== footer ================================= */
