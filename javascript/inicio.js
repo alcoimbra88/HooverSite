@@ -38,3 +38,4 @@ function mouseForaBotao (elemento){
 function navBarScroll (elemento){
     elemento.style.opacity="0.3"
 }
+

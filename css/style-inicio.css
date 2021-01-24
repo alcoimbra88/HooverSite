@@ -2,166 +2,117 @@ html, body{
     margin: 0px;
     height: 100%;
     width: 100%;
-    display: flex;
-    flex-direction: column;
+  
+
     
 }
 
-.body-inicio{
-    background-color: black;
-}
+
 
 /*================================== menu-navegacao ================================= */
 
-#botao-contato{
-    border-radius: 20px;
+a.nav-link {
     color: rgb(43, 43, 43);
-    background-color: white;
-    border:none;
+    margin-left: 2vh;
+    margin-right:2vh;
 }
 
-.nav{
-    margin-right: 3vh;
+a.nav-link:hover{
+    color:black;
+    text-decoration: underline;
+    transition: 0.8s;
 }
 
+a.navbar-brand{
+    color: black;
+     font-size: 3vh;
+     margin-left: 2vh;
+ }
 
-
-.conteiner-header{
- background-color: rgb(43, 43, 43);
-}
-
-#logo{
-    font-size: 6vh;
-    margin-right: 0px;
-
-}
-
-#barra-navegacao {
-    background-color: rgb(43, 43, 43) !important;
-}
-
-.navbar-brand{
-    color: white;
-}
-
-.nav-link{
-    color: white
-}
+ nav {
+     background-color: white;
+ }
 
 
 
 /*================================== body ================================= */
 
 
-#texto-inicio{
-    padding: 35vh 0 35vh 0;
-    text-align: center;
-    height: 110%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: white;
+div.section{
+    height: 100vh;
 }
 
-#texto-inicio img{
-    position: absolute;
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    opacity: 0;
-    animation: loadImgFundo 10s forwards;
+/*================================== inicio ================================= */
+
+#inicio{
+    background-image: url("../img/code-820275_1920.jpg");
+    background-size: cover;
 }
 
-#texto-inicio h1{
-    margin-bottom: 5vh;
-    font-size: 6vh;
-    z-index: 2;
-}
-
-#texto-inicio p{
-    font-weight: 100;
-    font-size: 4vh;
-    text-align: justify;
-    text-align: center;
-    margin-left: 15vh;
-    margin-right: 15vh;
-}
-
-@keyframes loadImgFundo{
-    0%{
-        opacity: 0;
-        transition: 0.8s;
-    }
-    100%{
-        opacity: 0.2;
-        z-index: 1;
-    }
-}
+/*================================== quem somos ================================= */
 
 #quem-somos{
-    background-color: rgb(43,43,43);
-    padding: 35vh 0 35vh 0;
-    width: 100%;
-    text-align: center;
+   
+    background-color: rgb(43, 43, 43);
+    
+}
+
+/*================================== hole (transicao) ================================= */
+
+#hole{
+    height: 40vh;
+    background-color: white;
+}
+
+/*================================== nossos trabalhos ================================= */
+
+.titulo-nossos-trabalhos{
     color: white;
-    z-index: 3;
-    border-top: white solid 1px;
-    box-shadow: 0px 0px 8px white;
-
-}
-
-#quem-somos p{
-    font-weight: 100;
-    font-size: 4vh;
-    text-align: justify;
-    margin-left: 15vh;
-    margin-right: 15vh;
-}
-
-#nossos-trabalhos {
-    background-color: black;
+    background-color: rgb(43, 43, 43);
+    margin-bottom: 0px;
+    box-shadow: 0px 0px 12px rgb(11, 14, 207);
+    text-align: center;
+    height: 15vh;
     display: flex;
-    flex-direction: column;
-    z-index: 2;
-    padding: 35vh 0 35vh 0;
-    text-align: center;
-    color: white;
+    justify-content: center;
+    align-items: center;
 }
 
-#nossos-trabalhos h1{
-    z-index: 2;
+img{ max-width:100%;}
+
+.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
+.gallery_box{ padding:0;display: flow-root;}
+
+.gallery_box li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.gallery_box li img{-webkit-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
+    transition: transform 0.5s ease;}
+.gallery_box li:nth-child(even) {
+    height: 304px;
+}
+.gallery_box li:nth-child(odd) {
+    height: 438px; 
+}
+.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
+.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
+.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
+.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
+.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
+
+
+/*================================== contato ================================= */
+
+#contato {
+    background-color: rgb(43, 43, 43);
 }
 
 
-#contato{
-    padding: 16vh 0 20vh 0;
-    text-align: center;
-    color: white;
-    background-color: rgb(59, 59, 59);
-    display: flex;
-    z-index: 2;
-}
-
-#conteiner-contato{
-    margin-left: 20vh;
-}
-
-#conteiner-contato h1{
-    margin-bottom: 6vh;
-}
-
-#exampleFormControlInput1{
-    width: 70vh;
-}
-
-#conteiner-contato button{
-    margin-top: 4vh;
-    background-color: black;
-    border: none;
-}
 
 
 
@@ -174,7 +125,7 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
+    
     
     
 }
