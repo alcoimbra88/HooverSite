@@ -39,3 +39,10 @@ function navBarScroll (elemento){
     elemento.style.opacity="0.3"
 }
 
+
+/*================= teste ====================*/
+
+    window.addEventListener("scroll",function() {
+        var nav = document.querySelector("nav");
+        nav.classList.toggle("sticky" , window.scrollY > 0);
+    })

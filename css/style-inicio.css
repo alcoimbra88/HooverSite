@@ -11,42 +11,64 @@ html, body{
 
 /*================================== menu-navegacao ================================= */
 
+nav{
+    transition: 0.8s;
+    height: 15vh;
+}
+
 a.nav-link {
-    color: rgb(43, 43, 43);
+    color: white;
     margin-left: 2vh;
     margin-right:2vh;
 }
 
 a.nav-link:hover{
-    color:black;
+    color: white;
     text-decoration: underline;
     transition: 0.8s;
 }
 
 a.navbar-brand{
-    color: black;
+    color: white;
      font-size: 3vh;
      margin-left: 2vh;
  }
 
- nav {
-     background-color: white;
+ nav.sticky{
+    color: rgb(43, 43, 43);
+    background-color: white;
+    transition: 0.8s;
+    height: 5vh;
  }
 
+ nav.sticky a:hover{
+     color: rgb(43, 43, 43);
+ }
+
+ nav.sticky .nav-brand,
+ nav.sticky ul li a {
+    color: rgb(43, 43, 43);
+    transition: 0.8s;
+ }
+
+ 
 
 
 /*================================== body ================================= */
 
 
 div.section{
+    background-color: rgb(43, 43, 43);
     height: 100vh;
 }
 
 /*================================== inicio ================================= */
 
 #inicio{
-    background-image: url("../img/code-820275_1920.jpg");
-    background-size: cover;
+    background-image: url("../img/background-div-inicio.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    background-position: center;
 }
 
 /*================================== quem somos ================================= */
@@ -66,56 +88,14 @@ div.section{
 
 /*================================== nossos trabalhos ================================= */
 
-.titulo-nossos-trabalhos{
-    color: white;
-    background-color: rgb(43, 43, 43);
-    margin-bottom: 0px;
-    box-shadow: 0px 0px 12px rgb(11, 14, 207);
-    text-align: center;
-    height: 15vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-img{ max-width:100%;}
-
-.gallery_box li{ width:33.333333%; max-width: 100% ; display:inline-block; float: left; text-align: center; overflow: hidden;    position: relative;}
-.gallery_box{ padding:0;display: flow-root;}
-
-.gallery_box li:hover img {
-    -moz-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-}
-.gallery_box li img{-webkit-transition: transform 0.5s ease;
-    -o-transition: transform 0.5s ease;
-    transition: transform 0.5s ease;}
-.gallery_box li:nth-child(even) {
-    height: 304px;
-}
-.gallery_box li:nth-child(odd) {
-    height: 438px; 
-}
-.gallery_box li:nth-child(odd) .box_data{ background:rgba(0,0,0,0.17) }
-.gallery_box li:nth-child(even) .box_data{ background:rgba(0,44,255,0.27) }
-.gallery_box .box_data{ position:absolute; top: 0; left: 0; right:0; bottom:0; color:#fff;}
-.gallery_box .box_data span{ position:absolute; top: 50%; transform: translateY(-50%); left:0 ; right:0; font-size:24px;}
-.gallery_box li:hover .box_data{ background:rgba(255,0,39,0.55)}
 
 
 /*================================== contato ================================= */
 
 #contato {
-    background-color: rgb(43, 43, 43);
+    background-color:white;
 }
-
-
-
-
-
 
 /*================================== footer ================================= */
 
