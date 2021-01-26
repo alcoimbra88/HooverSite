@@ -1,10 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
 html, body{
     margin: 0px;
     height: 100%;
     width: 100%;
-  
-
-    
+    font-family: sans-serif;
 }
 
 
@@ -17,8 +20,8 @@ nav{
 }
 
 a.nav-link {
+    text-transform: uppercase;
     color: white;
-    margin-left: 2vh;
     margin-right:2vh;
 }
 
@@ -47,6 +50,7 @@ a.navbar-brand{
 
  nav.sticky .nav-brand,
  nav.sticky ul li a {
+    font-size: 2vh;
     color: rgb(43, 43, 43);
     transition: 0.8s;
  }
@@ -65,25 +69,43 @@ div.section{
 /*================================== inicio ================================= */
 
 #inicio{
+    background-color: black;
     background-image: url("../img/background-div-inicio.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100vh;
     background-position: center;
+    background-attachment: fixed;
+}
+/*================================== div transicao 01 ================================= */
+
+.transition-01{
+    height: 30vh;
+    background-image: url("../img/background-transition-01.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 /*================================== quem somos ================================= */
 
 #quem-somos{
-   
-    background-color: rgb(43, 43, 43);
-    
+   background-color:rgb(43, 43, 43);    
 }
+
+.conteiner-quem-somos{
+    transition: 0.8s;
+}
+
+#quem-somos h1{
+    color: white;
+}
+
 
 /*================================== hole (transicao) ================================= */
 
 #hole{
     height: 40vh;
     background-color: white;
+
 }
 
 /*================================== nossos trabalhos ================================= */
