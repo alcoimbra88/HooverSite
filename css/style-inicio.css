@@ -38,20 +38,23 @@ a.navbar-brand{
  }
 
  nav.sticky{
-    color: rgb(43, 43, 43);
-    background-color: white;
+    color: #0040ff;
+    background-color: rgb(43, 43, 43);
     transition: 0.8s;
     height: 5vh;
  }
 
+ 
+
  nav.sticky a:hover{
-     color: rgb(43, 43, 43);
+     color: #235675;
+     text-shadow: 0px 0px 8px #235675 !important;
  }
 
- nav.sticky .nav-brand,
+ nav.sticky .navbar-brand,
  nav.sticky ul li a {
     font-size: 2vh;
-    color: rgb(43, 43, 43);
+    color:white;
     transition: 0.8s;
  }
 
@@ -62,7 +65,7 @@ a.navbar-brand{
 
 
 div.section{
-    background-color: rgb(43, 43, 43);
+    background-color:black;
     height: 100vh;
 }
 
@@ -72,67 +75,65 @@ div.section{
     background-color: black;
     background-image: url("../img/background-div-inicio.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 100vh;
+    background-size: 100% 100%;
     background-position: center;
-    background-attachment: fixed;
+
 }
 /*================================== div transicao 01 ================================= */
 
 .transition-01{
-    height: 30vh;
-    background-image: url("../img/background-transition-01.jpg");
+    height: 20vh;
+    background-image: url("../img/background-transition-01.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0px 0px 10px black;
 }
 
 /*================================== quem somos ================================= */
 
 #quem-somos{
-   background-color:rgb(43, 43, 43);    
+    background-color: black;
 }
 
-.conteiner-quem-somos{
-    transition: 0.8s;
-}
-
-#quem-somos h1{
-    color: white;
-}
-
-
-/*================================== hole (transicao) ================================= */
-
-#hole{
-    height: 40vh;
-    background-color: white;
-
-}
 
 /*================================== nossos trabalhos ================================= */
+#nossos-trabalhos{
+    background-color: black;
+    background-image: url("../img/background-nossos-trabalhos.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vh;
+    background-position: bottom left;
+    
+}
 
-
-
+/*================================== div transicao 03 ================================= */
 
 /*================================== contato ================================= */
 
 #contato {
-    background-color:white;
+    height: 88vh;
+    background-color: black;
+    background-image: url("../img/background-contato-teste.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
+
 
 /*================================== footer ================================= */
 
 .footer-inicio{
     background-color: rgb(43, 43, 43);
-    height: 12%;
+    height: 7vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    
-    
-    
+      
 }
 
 .footer-inicio p, a{
+    padding-top: 2vh;
     font-size: 2.5vh;
     text-align: center;
     color:white;

@@ -1,24 +1,5 @@
-function mouseEncima (elemento){
-    elemento.style.textShadow="0px 0px 8px white";
-    elemento.style.transition="1s";
-    elemento.style.fontWeight="bolder";
-}
 
-function mouseFora (elemento){
-    elemento.style.textShadow="none";
-    elemento.style.transition="1s"
-    elemento.style.fontWeight="lighter";
-}
 
-function mouseEncimaFooter (elemento){
-    elemento.style.color="rgb(114, 114, 231)"
-    elemento.style.transition="0.8s"
-}
-
-function mouseForaFooter (elemento){
-    elemento.style.color="white"
-    elemento.style.transition="0.8s"
-}
 
 function mouseEncimaBotao (elemento){ 
     elemento.style.backgroundColor="black";
@@ -35,18 +16,35 @@ function mouseForaBotao (elemento){
     elemento.style.transition="0.8s"
 }
 
-function navBarScroll (elemento){
-    elemento.style.opacity="0.3"
+/*================= Event Scroll Nav-Bar ====================*/
+
+window.addEventListener("scroll",function() {
+    var nav = document.querySelector("nav");
+    nav.classList.toggle("sticky" , window.scrollY > 0);
+    })
+
+/*================= Itens Nav-Bar ==========================*/
+
+function mouseEncima (elemento){
+    elemento.style.textShadow="0px 0px 12px white";
+    elemento.style.transition="1s";
+}
+
+function mouseFora (elemento){
+    elemento.style.textShadow="none";
+    elemento.style.transition="1s"
 }
 
 
-/*================= Event Scroll Nav-Bar ====================*/
 
-    window.addEventListener("scroll",function() {
-        var nav = document.querySelector("nav");
-        nav.classList.toggle("sticky" , window.scrollY > 0);
-    })
+/*================= Footer ================================*/
 
+function mouseEncimaFooter (elemento){
+    elemento.style.color="#235675"
+    elemento.style.transition="0.8s"
+}
 
-
-  
+function mouseForaFooter (elemento){
+    elemento.style.color="white"
+    elemento.style.transition="0.8s"
+}
